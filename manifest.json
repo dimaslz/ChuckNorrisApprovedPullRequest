@@ -1,0 +1,17 @@
+{
+  "name": "Chuck Norris Approved Pull Requests",
+  "author": "Dimas López Zurita (dimaslz) | dimaslopezzurita@gmail.com",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "description": "Approve or reject pull requests in the style of Chuck Norris. Approved PRs will show the 'Chuck Norris approved' stamp.",
+  "web_accessible_resources": [
+    "*.png"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/stash/projects/*/pull-requests/*", "https://bitbucket.org/*/pull-request/*"],
+      "css": ["style.css"],
+      "js": ["jquery.min.js", "script.js"]
+    }
+  ]
+}

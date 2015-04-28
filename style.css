@@ -1,0 +1,15 @@
+img#chucknorris {
+    position: absolute;
+    width: 10000px;
+    height: 10000px;
+    margin: 5px;
+    display: none;
+    z-index: 1000;
+}
+
+img#chucknorris-problem {
+    bottom: -300px;
+    left: -300px;
+    margin-left: 50%;
+    position: fixed;
+}
