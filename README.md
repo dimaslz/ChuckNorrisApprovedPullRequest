@@ -1,25 +1,62 @@
 # Chuck Norris Approved Pull Request
 [![Analytics](https://ga-beacon.appspot.com/UA-62378749-1/ChuckNorrisApprovedPullRequest/readme)](https://github.com/igrigorik/ga-beacon)
 
-Approve or reject pull requests in the style of Chuck Norris.
+Approve or reject pull requests in the style of Chuck Norris with this [Google Chrome extension](https://chrome.google.com/webstore/detail/chuck-norris-approved-pul/nimjcccacnkhhimfaafchcbjdghapoen). Approved PRs will show the "Chuck Norris Approved" stamp. Works on GitHub, Bitbucket and Stash.
 
-Approved PRs will show the "Chuck Norris approved" stamp.
+## Screenshots
 
-Works on GitHub, Bitbucket and Stash.
+Approved Pull Request
 
-## Some screenshots
+![Screenshot #2 - Pull request approved by Chuck Norris](http://dimaslz.com/lab/chrome-extensions/chuck-norris-approved/screenshot_2.png)
 
-This screen is when you approve the pull request
-[![Screenshot #2 - Pull request approved by Chuck Norris](http://dimaslz.com/lab/chrome-extensions/chuck-norris-approved/screenshot_2.png)]
+Approved and merged
 
-This screen is when the pull request was approved and merged
-[![Screenshot #1 - Pull request merged. Approved by Chuck Norris](http://dimaslz.com/lab/chrome-extensions/chuck-norris-approved/screenshot_1.png)]
+![Screenshot #1 - Pull request merged. Approved by Chuck Norris](http://dimaslz.com/lab/chrome-extensions/chuck-norris-approved/screenshot_1.png)
 
-And... try to decline a pull request, there are a easter egg!! Send me your screenshot if you find it :D.
+If you happen to decline a pull request, there's a hidden easter egg. 
+[Tweet](https://twitter.com/intent/tweet?text=@dimaslz%20%23chucknorrisapprovedprs) me a screenshot if you find it :D
 
-### Note
-* At the moment, the extension has not icon, only is a background script.
-* If you want hide the stamp image, only do click over the image and this go to hide.
+## Installation
 
-### Issues
-Send me your ideas that you want to implement. I will update features and configuration of images.
+Get the browser extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/chuck-norris-approved-pul/nimjcccacnkhhimfaafchcbjdghapoen).
+
+## Usage
+
+1. Navigate to the PR
+2. Approve it
+3. Enjoy the "Chuck Norris Approved". If you wan't to hide it just click on the stamp.
+
+## TODO
+* Add a custom icon. Currently it just runs as a background script.
+* Settings page to configure images.
+
+## Issues
+Please report any [issues](https://github.com/dimaslz/ChuckNorrisApprovedPullRequest/issues). New features and ideas that you'd like to see implemented will be welcome.
+
+## Contributing
+Feel free to send in any pull requests
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Dimas López <dimaslz@gmail.com>
+@dimaslz http://www.dimaslz.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
