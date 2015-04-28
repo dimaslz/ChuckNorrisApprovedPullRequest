@@ -44,7 +44,7 @@ Feel free to send in any pull requests
 The MIT License (MIT)
 
 Copyright (c) 2015 Dimas López <dimaslopezzurita@gmail.com>
-@dimaslz http://www.dimaslz.com
+[@dimaslz](http://twitter.com/dimaslz) [http://dimaslz.com](http://dimaslz.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
