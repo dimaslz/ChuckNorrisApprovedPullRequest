@@ -36,11 +36,14 @@ Please report any [issues](https://github.com/dimaslz/ChuckNorrisApprovedPullReq
 ## Contributing
 Feel free to send in any pull requests
 
+## Inspiration and Tester
+[@currycat](https://github.com/currycat), [@shaggybb](https://github.com/shaggybb), [@javi-moralesf](https://github.com/javi-moralesf), [@orestes](https://github.com/orestes)
+
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Dimas López <dimaslz@gmail.com>
+Copyright (c) 2015 Dimas López <dimaslopezzurita@gmail.com>
 @dimaslz http://www.dimaslz.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
