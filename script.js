@@ -18,8 +18,8 @@ $(document).ready(function () {
 
 	var chucknorrisStampAnimation = function () {
 		$chucknorris
-			.css({right: 0, bottom: 0, position: "fixed"})
-			.animate({ right: "=0px", bottom: "=0px", width: "200px", height: "200px", display: 'block' }, 500 );
+			.css({right: 0, bottom: 0, position: "fixed", left: 'auto', top: 'auto'})
+			.animate({ right: "=0px", bottom: "=0px", width: "200px", height: "200px", display: 'block', left: '=auto', top: '=auto' }, 500 );
 	};
 
 	// insert images into DOM
@@ -38,13 +38,31 @@ $(document).ready(function () {
 	// get approve button
 	var approved_btn = null;
 	if (github) {
-		approved_btn = $('.commit-form-actions button.btn.btn-primary');
+		setInterval(function () {
+			var url = /.*?github.com.*?\/pull\/.*?$/i.test(document.URL);
+			if (url) {
+					approved_btn = $('.commit-form-actions button.btn.btn-primary');
+					approved_btn.click(function () {
+						chucknorrisApprovedAnimation();
+					});
+			}
+		}, 1000);
 	} else {
 		approved_btn = $('button.aui-button[class*="approve"]');
 	}
 
-	$(approved_btn).click(function(){
-		chucknorrisApprovedAnimation();
+	$(approved_btn).click(function() {
+		var unapprove = /Unapprove/i.test(approved_btn.text());
+		if (!unapprove) {
+			chucknorrisApprovedAnimation();
+		} else {
+			setTimeout(function () {
+				approved_btn = $('button.aui-button[class*="approve"]');
+				$(approved_btn).on('click', function(){
+					chucknorrisApprovedAnimation();
+				});
+			}, 1000);
+		}
 	});
 
 	// get declined button
@@ -95,9 +113,7 @@ $(document).ready(function () {
 
 	// ... execute the animation
 	if (!!merged) {
-		$chucknorris
-			.css({right: 0, bottom: 0, position: "fixed"})
-			.animate({ right: "=0px", bottom: "=0px", width: "200px", height: "200px", display: 'block' }, 500 );
+		chucknorrisStampAnimation();
 	} else { // github work by states and not reload page, so, we check current url to set stamp or hide it
 		if (github) {
 			var checked = false;
