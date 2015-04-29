@@ -24,7 +24,7 @@ Get the browser extension at the [Chrome Web Store](https://chrome.google.com/we
 
 1. Navigate to the PR
 2. Approve it
-3. Enjoy the "Chuck Norris Approved". If you wan't to hide it just click on the stamp.
+3. Enjoy the "Chuck Norris Approved" stamp. If you want to hide it just click on the stamp.
 
 ## TODO
 * Add a custom icon. Currently it just runs as a background script.
@@ -37,7 +37,7 @@ Please report any [issues](https://github.com/dimaslz/ChuckNorrisApprovedPullReq
 ## Contributing
 Feel free to send in any pull requests
 
-## Inspiration and Tester
+## Inspiration and testing
 [@currycat](https://github.com/currycat), [@shaggybb](https://github.com/shaggybb), [@javi-moralesf](https://github.com/javi-moralesf), [@orestes](https://github.com/orestes)
 
 ## License
