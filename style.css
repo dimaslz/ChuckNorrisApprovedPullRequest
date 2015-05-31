@@ -7,9 +7,40 @@ img#chucknorris {
     z-index: 1000;
 }
 
+img#chucknorris.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+img#chucknorris.stamp-certified-animation {
+    transition: width 0.2s, height 0.2s;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+img#chucknorris.approved-animation {
+    transition: width 0.2s, height 0.2s;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    top: 0px;
+}
+
 img#chucknorris-problem {
     bottom: -300px;
     left: -300px;
     margin-left: 50%;
     position: fixed;
+}
+
+img#chucknorris-problem.show {
+    transition: all 1.5s ease;
+    bottom: 0px;
+    left: 0px;
 }
