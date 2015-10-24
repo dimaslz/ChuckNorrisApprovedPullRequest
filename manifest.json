@@ -1,7 +1,7 @@
 {
   "name": "Chuck Norris Approved Pull Requests",
   "author": "Dimas López Zurita (dimaslz) | dimaslopezzurita@gmail.com",
-  "version": "1.1.0",
+  "version": "1.2.5",
   "manifest_version": 2,
   "description": "Approve or reject pull requests in the style of Chuck Norris.",
   "web_accessible_resources": [
@@ -10,11 +10,16 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*/stash/projects/*/pull-requests/*",
-        "https://bitbucket.org/*/pull-request/*",
+        "https://*/stash/projects/**/*/pull-requests/*",
+        "https://bitbucket.org/**/*/pull-request*/*",
         "https://github.com/*"],
       "css": ["style.css"],
-      "js": ["jquery.min.js", "script.js"]
+      "js": ["script.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
 }

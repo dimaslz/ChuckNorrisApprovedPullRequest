@@ -5,6 +5,35 @@ img#chucknorris {
     margin: 5px;
     display: none;
     z-index: 1000;
+    -webkit-transition: width 0.2s, height 0.2s;
+    transition: width 0.2s, height 0.2s;
+}
+
+img#chucknorris.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+img#chucknorris.stamp-certified-animation {
+    -webkit-transition: width 0.2s, height 0.2s;
+    transition: width 0.2s, height 0.2s;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+img#chucknorris.approved-animation {
+    -webkit-transition: width 0.2s, height 0.2s;
+            transition: width 0.2s, height 0.2s;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    top: 0;
 }
 
 img#chucknorris-problem {
@@ -12,4 +41,11 @@ img#chucknorris-problem {
     left: -300px;
     margin-left: 50%;
     position: fixed;
+}
+
+img#chucknorris-problem.show {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    bottom: 0;
+    left: 0;
 }
