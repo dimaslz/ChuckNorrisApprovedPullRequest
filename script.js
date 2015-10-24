@@ -2,39 +2,35 @@
 var chucknorrisApprovedStampImage = chrome.extension.getURL("images/chucknorris.png");
 var chucknorrisProblemImage  	  = chrome.extension.getURL("images/chucknorris_problem.png");
 
+// chuck norris stamp element
+var chucknorrisApprovedStamp = document.createElement('img');
+chucknorrisApprovedStamp.id  = 'chucknorris';
+chucknorrisApprovedStamp.src = chucknorrisApprovedStampImage;
+
 // animations
 var chucknorrisApprovedAnimation = function () {
-	$chucknorrisApprovedStamp.className = $chucknorrisApprovedStamp.className + ' show';
+	chucknorrisApprovedStamp.className = chucknorrisApprovedStamp.className + ' show';
 	setTimeout(function () {
-		$chucknorrisApprovedStamp.className = $chucknorrisApprovedStamp.className + ' approved-animation';
+		chucknorrisApprovedStamp.className = chucknorrisApprovedStamp.className + ' approved-animation';
 	}, 1);
 };
 
 var chucknorrisStampAnimation = function () {
-	$chucknorrisApprovedStamp.className = $chucknorrisApprovedStamp.className + 'show';
+	chucknorrisApprovedStamp.className = chucknorrisApprovedStamp.className + 'show';
 	setTimeout(function () {
-		$chucknorrisApprovedStamp.className = $chucknorrisApprovedStamp.className + ' stamp-certified-animation';
+		chucknorrisApprovedStamp.className = chucknorrisApprovedStamp.className + ' stamp-certified-animation';
 	}, 1);
 };
 
-// chuck norris stamp element
-var $chucknorrisApprovedStamp = document.createElement('img');
-$chucknorrisApprovedStamp.id  = 'chucknorris';
-$chucknorrisApprovedStamp.src = chucknorrisApprovedStampImage;
-
 // chuck norris problem
-var $chucknorrisProblem = document.createElement('img');
-$chucknorrisProblem.id  = 'chucknorris-problem';
-$chucknorrisProblem.src = chucknorrisProblemImage;
+var chucknorrisProblem = document.createElement('img');
+chucknorrisProblem.id  = 'chucknorris-problem';
+chucknorrisProblem.src = chucknorrisProblemImage;
 
 // insert images into DOM
 var body = document.querySelector('body');
-body.appendChild($chucknorrisApprovedStamp);
-body.appendChild($chucknorrisProblem);
-
-// get current images from DOM
-//var $chucknorrisApprovedStamp 		  = chucknorrisElement;
-//var $chucknorrisProblem = chucknorrisProblemElement;
+body.appendChild(chucknorrisApprovedStamp);
+body.appendChild(chucknorrisProblem);
 
 // get platform
 var bitbucket = /.*?bitbucket.*/i.test(document.URL);
@@ -58,7 +54,7 @@ if (github) {
 
 if(!!approved_btn) {
 	approved_btn.addEventListener('click', function () {
-		var unapprove = /Unapprove/i.test(approved_btn.text());
+		var unapprove = /Unapprove/i.test(approved_btn.innerText);
 		if (!unapprove) {
 			chucknorrisApprovedAnimation();
 		} else {
@@ -86,12 +82,12 @@ if (bitbucket) {
 				checked_declined = true;
 				declined_btn.addEventListener('click', function () {
 					checked_declined = false;
-					$chucknorrisProblem.className = $chucknorrisProblem.className + ' show'; 
+					chucknorrisProblem.className = chucknorrisProblem.className + ' show'; 
 				});
 			}
 		} else {
 			checked_declined = false;
-			$chucknorrisProblem.className = '';
+			chucknorrisProblem.className = '';
 		}
 	},1000);
 } else {
@@ -100,7 +96,7 @@ if (bitbucket) {
 
 if(!!declined_btn) {
 	declined_btn.addEventListener('click', function () {
-		$chucknorrisProblem.className = $chucknorrisProblem.className + ' show';
+		chucknorrisProblem.className = chucknorrisProblem.className + ' show';
 	});
 }
 
@@ -137,17 +133,17 @@ if (!!merged) {
 }
 
 var hideChucknorrisApproved = function () {
-	$chucknorrisApprovedStamp.className = '';
+	chucknorrisApprovedStamp.className = '';
 };
 
-$chucknorrisApprovedStamp.addEventListener('click', function () {
+chucknorrisApprovedStamp.addEventListener('click', function () {
 	hideChucknorrisApproved();
 });
 
 var hideChucknorrisProblem = function () {
-	$chucknorrisProblem.className = '';
+	chucknorrisProblem.className = '';
 };
 
-$chucknorrisProblem.addEventListener('click', function () {
+chucknorrisProblem.addEventListener('click', function () {
 	hideChucknorrisProblem();
 });
