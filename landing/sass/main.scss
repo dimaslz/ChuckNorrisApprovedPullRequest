@@ -1,0 +1,93 @@
+@import '../node_modules/compass-mixins/lib/compass';
+@import '../node_modules/compass-mixins/lib/animation/core';
+@import '../node_modules/compass-mixins/lib/compass/css3/user-interface';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Include overrides
+@import 'bootstrap_overrides/overrides';
+
+// Helper style files
+@import 'helpers/helpers';
+@import 'helpers/mixins';
+@import 'helpers/variables';
+
+// Include module styles
+@import 'includes';
+
+@font-face {
+    font-family: Western Bang Bang;
+    src: url("../assets/fonts/westernbangbang/westernbangbang.ttf") format("truetype");
+}
+
+html {
+    min-height: 100%;
+}
+body {
+    background: white;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+h1 {
+    font-family: 'Western Bang Bang', 'Arial';
+    font-size: 6.5rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white 0 -1px white;
+    margin: 0;
+}
+
+.stamp {
+    position: absolute;
+    left: -80px;
+    top: 40px;
+    width: 500px;
+}
+
+.description {
+    font-size: 2rem;
+    padding-left: 10px;
+    p {
+        margin-bottom: 50px;
+    }
+    
+    ul.platforms {
+        list-style: none;
+        li {
+            float: left;
+        }
+    }
+}
+
+.download {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Western Bang Bang', 'Arial';
+    font-size: 5.5rem;
+}
+.store-logo {
+    width: 250px;
+}
+
+.slide {
+    padding: 0 100px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    padding: 10px 50px;
+    width: 100%;
+    background: white;
+}
