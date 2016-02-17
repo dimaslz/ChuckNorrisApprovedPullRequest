@@ -66,14 +66,8 @@ gulp.task('assets', function () {
 })
 
 gulp.task('github-page', function() {
-    gulp.src(['src/index.html'])
-    .pipe(
-        replace("<base href=\"/\">", "<base href=\"/learningAngular2/\">")
-    )
-    .pipe(gulp.dest('dist/index.html'));
-    
-//   return gulp.src('./dist/**/*')
-//     .pipe(ghPages());
+  return gulp.src('./public/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('uncss', function () {
