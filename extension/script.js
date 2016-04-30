@@ -49,7 +49,7 @@ if (github) {
 		}
 	}, 1000);
 } else {
-	approved_btn = document.querySelector('button.aui-button[class*="approve"]');
+	approved_btn = document.querySelector('.aui-button[class*="approve"]');
 }
 
 if(!!approved_btn) {
@@ -59,7 +59,7 @@ if(!!approved_btn) {
 			chucknorrisApprovedAnimation();
 		} else {
 			setTimeout(function () {
-				approved_btn = document.querySelector('button.aui-button[class*="approve"]');
+				approved_btn = document.querySelector('.aui-button[class*="approve"]');
 				approved_btn.addEventListener('click', function () {
 					chucknorrisApprovedAnimation();
 				});
