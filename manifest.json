@@ -12,7 +12,8 @@
       "matches": [
         "https://*/stash/projects/**/*/pull-requests/*",
         "https://bitbucket.org/**/*/pull-request*/*",
-        "https://github.com/*"],
+        "https://github.com/*",
+        "https://bitbucket.org/**/commits/*"],
       "css": ["style.css"],
       "js": ["script.js"]
     }
