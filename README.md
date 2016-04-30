@@ -1,3 +1,10 @@
+## IMPORTANT NOTE:
+I had a problem with my Free gmail Account and I can not do updates, so you need to unistall 
+the las version and install from new source: [Chrome Web Store](https://chrome.google.com/webstore/detail/jdibklgnphdfjbkpaidajehhjofecald) 
+with my account dimaslz.io.
+
+Thanks and sorry for disadvantages.
+
 # Chuck Norris Approved Pull Request
 [![Analytics](https://ga-beacon.appspot.com/UA-62378749-1/ChuckNorrisApprovedPullRequest/readme)](https://github.com/igrigorik/ga-beacon)
 
@@ -18,7 +25,7 @@ If you happen to decline a pull request, there's a hidden easter egg.
 
 ## Installation
 
-Get the browser extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/chuck-norris-approved-pul/nimjcccacnkhhimfaafchcbjdghapoen).
+Get the browser extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/jdibklgnphdfjbkpaidajehhjofecald).
 
 ## Usage
 
@@ -40,12 +47,15 @@ Feel free to send in any pull requests
 ## Inspiration and testing
 [@currycat](https://github.com/currycat), [@shaggybb](https://github.com/shaggybb), [@javi-moralesf](https://github.com/javi-moralesf), [@orestes](https://github.com/orestes)
 
+## Collaborators
+[@orestes](https://github.com/orestes) [@nene](https://github.com/nene)
+
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Dimas López <dimaslopezzurita@gmail.com>
-[@dimaslz](http://twitter.com/dimaslz) [http://dimaslz.com](http://dimaslz.com)
+Copyright (c) 2015 Dimas López <me@dimaslz.io>
+[@dimaslz](http://twitter.com/dimaslz) [http://dimaslz.com](http://dimaslz.com) [http://dimaslz.io](http://dimaslz.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
