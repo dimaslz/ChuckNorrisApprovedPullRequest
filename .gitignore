@@ -1,3 +1,4 @@
 .idea
 .DS_STORE
 .publish
+landing/node_modules
